@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">spik.io</string>
+    <string name="app_name1">spik</string>
+
+    <string name="app_name2">.io</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="search_hint">Search</string>lorem
+    <string name="action_back">Back</string>
+    <string name="lorem">Back</string>
+    <string name="start_conversation">Start Conversation</string>
+
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="got_it">Got It</string>
+    <string name="lets_go">Let\'s go</string>
+
+    <string name="app_version">Got It</string>
+    <string name="version_unknown">Got It</string>
+
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_clear_search">Clear search</string>
+    <string name="about_text">The best android implementation of material UI components. This app implemented based on Google Design Guidelines.
+    </string>
+    <string name="middle_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin</string>
+    <string name="by_clicking_i_agree_to_terms_and_service">By clicking, I agree to Terms and Service.</string>
+    <string name="connect_with_googlee">Connect with Google</string>
+    <string name="_1000_authors_free_download_offline_reading">1000+ Authors, Free \ndownload, Offline reading</string>
+    <string name="the_dreaming_reality">The Dreaming \nReality</string>
+    <string name="label_personal_information">The Dreaming \nReality</string>
+    <string name="change_user_password">The Dreaming \nReality</string>
+    <string name="keep_your_session_open">The Dreaming \nReality</string>
+    <string name="close_your_session">The Dreaming \nReality</string>
+    <string name="do_you_like_our_software">The Dreaming \nReality</string>
+
+    <string name="contact_us1">The Dreaming \nReality</string>
+
+
+    <string name="english_text">The second  planet  was inhabited  by  a conceited man\"Ah! Ah! I  am about  to receive a visit  from an admirer! he\'s very young he born in 19900 in A-901</string>
+    <string name="phonetic_text">ðə ˈsɛkənd ˈplænɪt wɒz ɪnˈhæbɪtɪd baɪ ə kənˈsiːtɪd mæn\"ɑː! ɑː! aɪ æm əˈbaʊt tuː rɪˈsiːv ə ˈvɪzɪt frɒm ən ədˈmaɪərə! hiːz ˈvɛri jʌŋ hiː bɔːn ɪn 19900 ɪn eɪ-901</string>
+
+</resources>

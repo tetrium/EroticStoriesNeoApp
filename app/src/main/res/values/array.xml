@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <integer-array name="social_images">
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_star</item>
+    </integer-array>
+
+    <string-array name="social_names">
+        <item>Android</item>
+        <item>Apple</item>
+        <item>Behance</item>
+        <item>Blogger</item>
+        <item>Deviantart</item>
+
+        <item>Dribbble</item>
+        <item>Envato</item>
+        <item>Evernote</item>
+        <item>Facebook</item>
+        <item>Flickr</item>
+
+        <item>Instagram</item>
+        <item>Linkedin</item>
+        <item>Pinterest</item>
+        <item>Skype</item>
+        <item>Soundcould</item>
+
+        <item>Tumblr</item>
+        <item>Twitter</item>
+        <item>Vimeo</item>
+        <item>Youtube</item>
+    </string-array>
+</resources>

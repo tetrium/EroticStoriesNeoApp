@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!--<com.warkiz.widget.IndicatorSeekBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:isb_progress="25"-->
+        <!--app:isb_seek_smoothly="true"-->
+        <!--app:isb_ticks_count="5"-->
+        <!--app:isb_show_tick_marks_type="oval"-->
+        <!--app:isb_tick_marks_size="13dp"-->
+        <!--app:isb_tick_marks_drawable="@mipmap/ic_launcher"-->
+        <!--app:isb_show_tick_texts="true"-->
+        <!--app:isb_tick_texts_size="0sp"-->
+        <!--app:isb_tick_texts_color="@color/orange"-->
+        <!--android:thumb="@drawable/ic_icon"-->
+        <!--app:isb_thumb_size="20dp"-->
+        <!--app:isb_show_indicator="rounded_rectangle"-->
+        <!--app:isb_indicator_color="@color/grey"-->
+        <!--app:isb_indicator_text_color="@color/colorAccent"-->
+        <!--app:isb_indicator_text_size="18sp"-->
+        <!--app:isb_track_background_color="@color/grey"-->
+        <!--app:isb_track_background_size="2dp"-->
+        <!--app:isb_track_progress_color="@color/txt_color"-->
+        <!--app:isb_track_progress_size="4dp" />-->
+
+
+        <ImageView
+
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+    <!--<com.hardcodeflow.eroticstories.common.customfonts.TextViewGiorgiabold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:textSize="23sp"
+
+            android:text="@string/app_name1"
+            android:gravity="center"/>
+            <com.hardcodeflow.eroticstories.common.customfonts.TextViewGiorgiabold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:text="@string/app_name2"
+                android:gravity="center"/>-->
+        </LinearLayout>
+
+        <com.hardcodeflow.eroticstories.common.customfonts.MyTextView_Roboto_Light
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:letterSpacing="0.0265"
+            android:lineSpacingExtra="3dp"
+            android:text=""
+            android:textColor="#6c7581"
+            android:textSize="13.5sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookReadingViewHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:text="ola que haces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_dark_30"
+        android:clickable="true"
+        android:translationZ="5dp"
+        android:fitsSystemWindows="true" />-->
+    <View
+        android:id="@+id/back_drop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_dark_30"
+        android:clickable="true"
+        android:translationZ="5dp"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="end|right"
+        android:translationZ="6dp"
+        android:layout_marginBottom="70dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyt_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end|right"
+                android:layout_margin="@dimen/spacing_middle"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="2dp"
+                app:contentPadding="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Record Voice"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:layout_marginLeft="@dimen/spacing_smlarge"
+                android:layout_marginRight="@dimen/spacing_smlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:clickable="true"
+                android:tint="@color/grey_80"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini"
+                app:rippleColor="@android:color/black"
+                app:srcCompat="@drawable/ic_library" />
+
+            <View
+                android:layout_width="@dimen/spacing_xmedium"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end|right"
+                android:layout_margin="@dimen/spacing_middle"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="2dp"
+                app:contentPadding="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Call Friends"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:layout_marginLeft="@dimen/spacing_smlarge"
+                android:layout_marginRight="@dimen/spacing_smlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:clickable="true"
+                android:tint="@color/grey_80"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini"
+                app:rippleColor="@android:color/black"
+                app:srcCompat="@drawable/ic_library" />
+
+            <View
+                android:layout_width="@dimen/spacing_xmedium"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+       <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_middle"
+            android:layout_marginLeft="@dimen/spacing_smlarge"
+            android:layout_marginRight="@dimen/spacing_smlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_library" />
+-->
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headerAppBarLayout"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?android:actionBarSize"-->
+        <!--app:layout_scrollFlags="scroll|snap|enterAlways"-->
+        <!--app:title="@string/app_name" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10sp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_back"/>
+
+
+            <com.hardcodeflow.eroticstories.common.customfonts.MyTextView_Roboto_Regular
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Blink: The Power of Thinking Without
+Thinking"
+                android:textColor="@color/txt_color"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"/>
+
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/ic_headphones"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+
+        <!--<com.hardcodeflow.bookslick.customfonts.TextViewSFProDisplayMedium-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="15dp"-->
+        <!--android:text="Designed by WSDesign Team"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16.7sp"-->
+        <!--/>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerAppBarLayout"
+        android:scrollbars="vertical"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.hardcodeflow.eroticstories.common.customfonts.TextViewGiorgia
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:letterSpacing="0.025"
+                android:lineSpacingExtra="4dp"
+
+                android:text="Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat."
+                android:textColor="@color/txt_color"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:contentInsetEnd="0dp"
+        android:layout_alignParentBottom="true"
+
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_behavior="com.hardcodeflow.bookslick.customfonts.ScrollingToolbarBehavior">
+
+        <!--<com.roughike.bottombar.BottomBar-->
+        <!--android:id="@+id/bottombar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:background="#fff"-->
+        <!--app:layout_behavior="com.hardcodeflow.bookslick.customfonts.ScrollingToolbarBehavior"-->
+        <!--android:elevation="8dp"-->
+        <!--android:gravity="bottom|end"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--app:bb_activeTabColor="#ffffff"-->
+        <!--app:bb_badgesHideWhenActive="true"-->
+        <!--app:bb_inActiveTabColor="#a4ebfe"-->
+        <!--app:bb_showShadow="true"-->
+        <!--app:bb_tabXmlResource="@xml/bottombar_tabs1"-->
+        <!--app:bb_titleTextAppearance="@style/botoombar_textchange"-->
+        <!--app:bb_titleTypeFace="fonts/Roboto-Regular.ttf"-->
+        <!--app:paddingStart="10dp" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="24dp"
+                    android:layout_height="16.7dp"
+                    android:src="@drawable/ic_eye_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="20.3dp"
+                    android:layout_height="20.3dp"
+                    android:src="@drawable/ic_font_1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear42"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="21.7dp"
+                    android:layout_height="21.7dp"
+                    android:src="@drawable/ic_zoomout"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="17.3dp"
+                    android:layout_height="17.7dp"
+                    android:src="@drawable/ic_settings"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.dmitrymalkovich.android.ProgressFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/white"
+        app:elevation="2dp"
+        android:layout_gravity="bottom"
+
+        app:fabSize="normal"
+        app:rippleColor="@color/black"
+        android:src="@drawable/ic_library" >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/white"
+            app:elevation="2dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_library"
+           />
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+
+</RelativeLayout>
+
+
+

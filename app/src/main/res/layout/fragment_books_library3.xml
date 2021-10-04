@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categoriesButton"
+            style="@style/DropDownItem"
+            android:layout_width="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Categories"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/englishLevelButton"
+            style="@style/DropDownItem"
+            android:layout_width="wrap_content"
+            android:text="Level"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:autoSizeMaxTextSize="@dimen/text_large_18"
+            app:autoSizeMinTextSize="@dimen/text_tiny_10"
+            app:autoSizeTextType="uniform"
+            />
+
+
+
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="13.3dp"
+                android:paddingLeft="16.7dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/booksRecyclerView"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_back"/>
+
+
+    <com.hardcodeflow.eroticstories.common.customfonts.TextViewGiorgiabold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt_color"
+        android:textSize="16.7sp"
+        android:text="Filter (232 Books)"
+        android:layout_marginLeft="30dp"/>
+
+    <com.hardcodeflow.eroticstories.common.customfonts.TextViewGiorgia
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="15sp"
+        android:textColor="@color/txt_color"
+        android:layout_gravity="right"
+        android:layout_marginRight="15sp"/>
+
+</androidx.appcompat.widget.Toolbar>

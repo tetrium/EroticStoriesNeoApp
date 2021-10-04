@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/card_view_outer"--><!--android:layout_gravity="center"--><!--android:layout_height="350dp"--><!--android:layout_width="350dp"--><!--card_view:cardBackgroundColor="@android:color/transparent"--><!--card_view:cardCornerRadius="0dp"--><!--card_view:cardElevation="3dp">-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="32dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardMaxElevation="6dp"
+    android:clickable="true"
+    app:cardUseCompatPadding="true"
+    android:background="@color/colorPrimary"
+    card_view:cardPreventCornerOverlap="false"
+    android:focusable="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/spacing_small"
+                    android:paddingTop="@dimen/spacing_small">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/spacing_small">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="3p"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_100_"
+                                app:fontFamily="sans-serif-medium" />
+
+                            <ProgressBar
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="0"
+                                android:progressDrawable="@drawable/circular_progress_bar_blue" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_light" />
+
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_xlarge"
+                android:layout_marginRight="@dimen/spacing_xlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/text_large_20"
+                android:scrollingCache="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/bookExercisesRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+></androidx.recyclerview.widget.RecyclerView>
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_xlarge"
+                android:layout_marginRight="@dimen/spacing_xlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:id="@+id/englishText"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/mdtp_dark_gray"
+                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:id="@+id/englishText"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="juliana.c@mail.com"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+                    <TextView
+                        android:id="@+id/phoneticText"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="juliana.c@mail.com"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+                    <TextView
+                        android:id="@+id/spanishText"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="juliana.c@mail.com"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@color/gray_light" />
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge" />
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

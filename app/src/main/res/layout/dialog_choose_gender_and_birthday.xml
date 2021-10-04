@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/dialogContainerLinearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="              Select your gender                   "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_100_" />
+        <LinearLayout
+            android:id="@+id/closeButton"
+            android:layout_height="wrap_content"
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:visibility="gone"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/mdtp_light_gray"
+                app:srcCompat="@drawable/ic_close"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/spacing_medium"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/genderFemaleImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/female_gender_unselected" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/genderMaleImageView"
+                    android:tint="@color/grey_60"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/male_gender_unselected" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:autoLink="web"
+            android:text="Select your birthday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_100_" />
+        <DatePicker
+            android:id="@+id/birthdayDatePicker"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_middle" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/chooseGenderAndBirthdayOkButton"
+            style="@style/RippleStyleWhite"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+
+            android:layout_height="@dimen/spacing_xxlarge"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="OK"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

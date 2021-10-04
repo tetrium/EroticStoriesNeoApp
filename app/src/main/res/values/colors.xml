@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_60">#666666</color>
+    <color name="grey_100_">#0d0d0d</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="colorSecondary">#000000</color>
+    <color name="gray_light">#83e1e1e1</color>
+    <color name="gray_lighter">#F8F8F8</color>
+    <color name="overlay_light_90">#E6FFFFFF</color>
+    <color name="btn_orange">#E6FFFFFF</color>
+    <color name="quantum_orange">#E6FFFFFF</color>
+    <color name="btn_purple_a400">#E6FFFFFF</color>
+    <color name="quantum_purple">#E6FFFFFF</color>
+    <color name="quantum_teals">#E6FFFFFF</color>
+    <color name="quantum_teal">#E6FFFFFF</color>
+    <color name="quantum_indigo">#E6FFFFFF</color>
+    <color name="quantum_white_100">#E6FFFFFF</color>
+
+    <color name="quantum_black_100">#E6FFFFFF</color>
+
+    <color name="quantum_cyan">#E6FFFFFF</color>
+
+
+    <color name="quantum_yellow">#E6FFFFFF</color>
+
+
+    <color name="quantum_amber50">#E6FFFFFF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="colorLine">#AD000000</color>
+    <color name="shimmer_color">#a2878787</color>
+    <color name="overlay_light_10">#1AFFFFFF</color>
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_80">#37474F</color>
+    <color name="light_green_400">#9CCC65</color>
+    <color name="red_300">#E57373</color>
+    <color name="colorPrimary">#eac54b</color>
+
+    <color name="colorPrimaryDark">#AD000000</color>
+    <color name="colorPrimaryLight">#f4f4f4</color>
+
+
+    <color name="grey_3">#f7f7f7</color>
+
+    <color name="grey_90">#263238</color>
+    <color name="grey_95">#1a1a1a</color>
+
+
+    <color name="black">#000000</color>
+    <color name="transperent">#00000000</color>
+    <color name="txt_color">#394556</color>
+    <color name="orange">#ff8700</color>
+    <color name="green">#069661</color>
+    <color name="sky_blue">#83b4d7</color>
+    <color name="grey">#e1e1e1</color>
+
+
+    <color name="colorAccent">#64d5e2</color>
+    <color name="colorTertiary">#6b6b6b</color>
+    <color name="colorBadge">#f56b96</color>
+    <color name="colorSecondaryAlpha">#AD000000</color>
+    <color name="colorPrimaryAlpha">#ADffffff</color>
+    <color name="colorCreditCardText">#253669</color>
+
+    <color name="colorButtonBg">#eac54b</color>
+
+    <color name="colorText">#DE000000</color>
+    <color name="colorSecondaryText">#ababab</color>
+    <color name="default_textColor">#DE000000</color>
+    <color name="default_textColorHint">#8A000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="seek_bar_background">#ababab</color>
+    <color name="seek_bar_progress">#3399CC</color>
+    <color name="seek_bar_secondary_progress">#3399CC</color>
+    <color name="tectColor">#000</color>
+    <color name="songTimerColor">#484848</color>
+
+
+
+    <color name="grey_10">#e6e6e6</color>
+
+    <color name="grey_5">#f2f2f2</color>
+    <color name="blue_400">#42A5F5</color>
+
+    <color name="grey_20">#cccccc</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="teal_400">#26A69A</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="green_300">#81C784</color>
+
+
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_dark_40">#66000000</color>
+    <color name="overlay_dark_60">#99000000</color>
+    <color name="overlay_dark_70">#B3000000</color>
+    <color name="overlay_dark_80">#CC000000</color>
+    <color name="overlay_dark_90">#E6000000</color>
+
+</resources>

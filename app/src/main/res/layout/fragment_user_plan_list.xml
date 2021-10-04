@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:background="@color/gray_lighter"
+    android:orientation="vertical"
+    android:scrollingCache="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_collapseMode="pin"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <LinearLayout
+            android:id="@+id/lyt_parent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/headerTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Plan"
+                            android:textSize="@dimen/_30sdp"
+                            android:textColor="@color/mdtp_light_gray"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            />
+                        <TextView
+                            android:id="@+id/subHeaderTextView"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_12sdp"
+
+                            android:text="Learn Reading English Book"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_40" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="0dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/progressHolder"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:focusable="true">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/userProgressBar"
+                                    android:layout_width="@dimen/_48sdp"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_height="@dimen/_48sdp"
+                                    app:cpb_background_progressbar_color="#FFCDD2"
+                                    app:cpb_background_progressbar_width="3dp"
+                                    app:cpb_progressbar_color="#F44336"
+                                    app:cpb_progressbar_width="7dp" />
+
+                                <TextView
+                                    android:id="@+id/userLevelTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+
+                                    android:text="...."
+                                    android:textColor="@color/black"
+
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="5dp"
+                                    android:text="Level"
+                                    android:textSize="@dimen/_8sdp"
+
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                            </FrameLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+
+                                android:id="@+id/conversationImageView"
+                                android:src="@drawable/ic_crystal"
+                                />
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:text="123"
+                                android:textSize="@dimen/_10sdp"
+                                android:id="@+id/userPointsTextView"
+                                />
+                        </LinearLayout>
+
+                        <!--
+                                                <ImageView
+                                                    android:id="@+id/searchButton"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="?attr/actionBarSize"
+                                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                                    android:tint="@color/grey_60"
+                                                    android:layout_marginRight="@dimen/spacing_large"
+
+                                                    android:src="@drawable/ic_deck2" />
+                                                <ImageView
+                                                    android:id="@+id/filterButton"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="?attr/actionBarSize"
+                                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                                    android:tint="@color/grey_60"
+                                                    android:layout_marginRight="@dimen/spacing_large"
+
+                                                    android:src="@drawable/ic_deck2" />-->
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+                <!--  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="1px"
+                      android:layout_alignParentBottom="true"
+                      android:background="@color/grey_20" />-->
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/userHasNotInternetImageView"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_user_has_not_internet"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/planConversationRecyclerView"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/_4sdp"
+
+                android:layout_height="wrap_content">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+
+
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/grey_10" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_mlarge">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mlarge"
+                            android:layout_height="@dimen/spacing_mlarge"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/shape_round_solid" />
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_stars_black_24dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_large">
+                            <ImageView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:id="@+id/conversationImageView11"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:tint="@color/gray_light"
+                                android:src="@drawable/ic_view_carousel_black_24dp"
+                                />
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_marginLeft="12dp"
+
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="12dp"
+
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/conversationTitleTextView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bonus"
+                                        android:layout_weight="0.8"
+
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        android:textColor="@color/grey_60"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="fill_parent"
+                                        android:visibility="visible"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.1"
+                                        android:layout_marginLeft="12dp"
+                                        android:gravity="center"
+
+                                        android:id="@+id/conversationImageView1"
+                                        android:src="@drawable/ic_crystal"
+                                        />
+
+                                    <TextView
+
+                                        android:layout_width="40dp"
+                                        android:layout_height="fill_parent"
+                                        android:visibility="visible"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+
+                                        android:layout_weight="0.1"
+                                        android:text="12"
+                                        android:id="@+id/flashCards"
+                                        />
+                                </LinearLayout>
+                                <Button
+                                    android:id="@+id/shareAppButton"
+                                    style="@style/AppButtonsWithoutMargin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_margin="@dimen/margin_16"
+                                    android:visibility="gone"
+                                    android:backgroundTint="@color/colorButtonBg"
+                                    android:text="Start Flash Cards"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="@dimen/margin_16"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/imgGift"
+                                    app:layout_constraintTop_toBottomOf="@id/txtShareGift" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@color/overlay_dark_10" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/spacing_xsmall">
+
+
+                            <Button
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:id="@+id/startConversationButton"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Start"
+                                android:backgroundTint="@color/transparent"
+                                android:textColor="@color/grey_60"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:id="@+id/heartImageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:padding="@dimen/spacing_middle"
+                                android:src="@drawable/ic_favorite_black_24dp"
+                                android:tint="@color/grey_60" />
+
+                            <TextView
+                                android:id="@+id/userFavoritesNumberTextView"
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+
+                                android:tint="@color/grey_60"
+                                android:text="2" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_xlarge" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

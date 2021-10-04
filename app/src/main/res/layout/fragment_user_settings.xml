@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_5"
+
+    android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            android:padding="@dimen/margin_8">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPersonalInformation"
+                style="@style/BoldSubTitleStyle"
+                android:text="Options" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/settingsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                app:cardCornerRadius="@dimen/margin_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPersonalInformation">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/aboutButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+
+                        android:gravity="center_vertical"
+                        android:minHeight="?attr/actionBarSize"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/mdtp_light_gray"
+                                        android:text="About"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0dp" />
+
+                                <ImageButton
+                                    android:id="@+id/more22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="?attr/actionBarSize"
+                                    android:background="@color/transparent"
+                                    android:tint="@color/grey_60"
+                                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+                                    />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/grey_20" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/rateAppButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="?attr/actionBarSize"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:textColor="@color/mdtp_light_gray"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rate the app"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0dp" />
+                                <ImageButton
+                                    android:id="@+id/more1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="?attr/actionBarSize"
+                                    android:background="@color/transparent"
+                                    android:tint="@color/grey_60"
+                                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/grey_20" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/logoutButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="?attr/actionBarSize"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:textColor="@color/mdtp_light_gray"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Logout"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0dp" />
+                                <ImageButton
+                                    android:id="@+id/more12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="?attr/actionBarSize"
+                                    android:background="@color/transparent"
+                                    android:tint="@color/grey_60"
+                                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/grey_20" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                app:cardCornerRadius="@dimen/margin_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settingsCard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgGift"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="@dimen/margin_16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo"
+                        android:layout_marginLeft="@dimen/margin_16" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtShareGift"
+                        style="@style/BoldSubTitleStyle"
+                        android:text="Do you like the app?"
+                        app:layout_constraintStart_toStartOf="@+id/btnShare"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/shareAppButton"
+                        style="@style/AppButtonsWithoutMargin"
+                        android:layout_width="0dp"
+                        android:layout_margin="@dimen/margin_16"
+                        android:backgroundTint="@color/colorButtonBg"
+                        android:text="SHARE APP"
+                        app:cornerRadius="@dimen/margin_16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgGift"
+                        app:layout_constraintTop_toBottomOf="@id/txtShareGift" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

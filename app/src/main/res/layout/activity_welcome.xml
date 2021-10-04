@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <com.hardcodeflow.eroticstories.common.customviews.NonSwipeableViewPager
+            android:id="@+id/welcomeViewPager"
+            android:background="@color/colorPrimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/grey_40"
+            app:srcCompat="@drawable/ic_close"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dotsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center|top"
+        android:orientation="horizontal" />
+    <ProgressBar
+        android:id="@+id/welcomeProgressBar"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/RippleStyleBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_10"
+            android:text="@string/next"
+            android:visibility="visible"
+
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_90"
+            android:textStyle="bold" />
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

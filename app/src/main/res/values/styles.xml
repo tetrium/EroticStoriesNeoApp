@@ -1,0 +1,115 @@
+<resources>
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989A</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorSecondary</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="TextAppearance.Subhead.Bold" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomDialogAnimation">
+
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppButtonsWithoutMargin" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_large_16</item>
+        <item name="android:padding">@dimen/margin_16</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/quantum_black_100</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlHighlight">@color/quantum_black_100</item>
+        <item name="android:textColorSecondary">@color/quantum_black_100</item>
+        <item name="android:textColorPrimary">@color/quantum_black_100</item>
+        <item name="actionMenuTextColor">@color/quantum_black_100</item>
+
+    </style>
+
+    <style name="SearchViewIcon">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">@dimen/search_icon_padding</item>
+        <item name="android:paddingRight">@dimen/search_icon_padding</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:alpha">0.54</item>
+    </style>
+    <style name="BoldSubTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_large_16</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:layout_marginStart">@dimen/margin_8</item>
+        <item name="android:layout_marginEnd">@dimen/margin_8</item>
+        <item name="android:layout_marginTop">@dimen/margin_16</item>
+    </style>
+    <style name="DropDownItem" parent="BoldSubTitleStyle">
+        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_right</item>
+        <item name="android:paddingTop">@dimen/margin_8</item>
+        <item name="android:paddingBottom">@dimen/margin_8</item>
+        <item name="android:paddingStart">@dimen/margin_16</item>
+        <item name="android:paddingEnd">@dimen/margin_16</item>
+        <item name="android:layout_margin">@dimen/margin_16</item>
+        <item name="android:background">@drawable/rounded_white_rect</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!--style for ripple library-->
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+
+    <style name="Toolbar.Light" parent="@style/AppTheme">
+        <item name="colorControlNormal">@color/grey_60</item>
+        <item name="android:textColorPrimary">@color/grey_60</item>
+    </style>
+
+    <style name="Dimmed">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+</resources>

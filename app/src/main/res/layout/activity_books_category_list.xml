@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/ic_back"/>
+
+
+        <com.hardcodeflow.eroticstories.common.customfonts.TextViewGiorgiabold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:textSize="16.7sp"
+            android:layout_marginLeft="27dp"
+            android:text="Recommend"/>
+
+        <ImageView
+            android:layout_width="22.7dp"
+            android:layout_height="21.7dp"
+            android:paddingTop="3dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_filter"
+            android:layout_marginRight="15dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_down"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/allCategoriesBookListRecyclerView"
+        android:paddingTop="16.7dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="wrap_content"
+app:cardBackgroundColor="@color/gray_light"
+app:cardCornerRadius="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="@dimen/spacing_large"
+app:cardElevation="0dp" android:layout_width="match_parent"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_large"
+    android:paddingLeft="@dimen/spacing_middle"
+    android:paddingRight="@dimen/spacing_middle"
+    android:paddingTop="@dimen/spacing_large">
+
+    <TextView
+        android:id="@+id/sectionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N"
+        android:textSize="29dp"
+        ></TextView>
+
+
+    <View
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bookSectionNameTextView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Credit/Debit Card"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Master Card ending ***5"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@color/grey_40" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

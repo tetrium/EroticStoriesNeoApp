@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16.7dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bookCoverImageView"
+            android:layout_width="97.8dp"
+            android:layout_height="146dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blink_imges"/>
+
+        <com.hardcodeflow.eroticstories.common.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/bookNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:textSize="13.3sp"
+            android:text="Blink: The Power
+of Thinking Wi…"
+            android:layout_marginTop="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="12.4dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star"/>
+
+            <com.hardcodeflow.eroticstories.common.customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/bookRaitingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="11.7sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/txt_color"/>
+        </LinearLayout>
+
+
+        <com.hardcodeflow.eroticstories.common.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/bookAuthorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malcolm Gladwell"
+            android:textSize="11.7sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#a0a7b0"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16.7dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/bookCoverImageView"
+            android:layout_width="140dp"
+            android:layout_height="196dp"
+            android:scaleType="centerCrop"
+            android:background="@color/light_transparent"
+
+            android:src="@drawable/blink_imges"/>
+
+
+
+        <View
+
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textColor="@color/txt_color"
+            android:textSize="13.3sp"
+
+            android:background="@color/light_transparent"
+
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="12.4dp"
+                android:background="@color/light_transparent"
+
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star"/>
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="12.4dp"
+                android:background="@color/light_transparent"
+                android:layout_marginLeft="5dp"
+
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star"/>
+
+
+        </LinearLayout>
+
+
+
+        <View
+
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textColor="@color/txt_color"
+            android:textSize="13.3sp"
+
+            android:background="@color/light_transparent"
+
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
